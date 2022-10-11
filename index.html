@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width = device-width, initial-scale = 1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-circle-progress/1.2.2/circle-progress.min.js" integrity="sha512-6kvhZ/39gRVLmoM/6JxbbJVTYzL/gnbDVsHACLx/31IREU4l3sI7yeO0d4gw8xU5Mpmm/17LMaDHOCf+TvuC2Q==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js" defer></script>
+    <title>Mi portafolio personal</title>
+</head>
+
+<body>
+    <header>
+        <div class="max-width">
+            <nav class="navbar nav-flex">
+                <div class="logo">
+                    <a data-smooth href="#inicio">Portfa<span>folio</span></a>
+                </div>
+                <!--logo-->
+                <ul>
+                    <li><a data-smooth href="#inicio">inicio</a></li>
+                    <li><a data-smooth href="#sobre">Sobre mi</a></li>
+                    <li><a data-smooth href="#habilidades">Habilidades</a></li>
+                    <li><a data-smooth href="#contato">Contacto</a></li>
+                </ul>
+                <div class="menu-btn">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+        <!--max-width-->
+    </header>
+
+    <section class="inicio" id="inicio">
+        <div class="max-width">
+            <div class="inicio-content">
+                <div class="txt1">Hola , Me llamo </div>
+                <div class="txt2">Sebastian caballero escobar</div>
+                <div class="txt3">Y soy un <span class="typing"></span></div>
+            </div>
+        </div>
+        <!--max-width-->
+    </section>
+
+    <section data-anima class="sobre" id="sobre">
+        <div class="max-width">
+            <h2 class="title">Sobre Mi</h2>
+            <div class="sobre-content">
+                <div class="column left">
+                    <img src="./assets/img/yo.jpeg" alt="" />
+                </div>
+
+                <div class="column right">
+                    <h2 class="text">
+                        Me llamo Sebastian y soy
+                        <span>Developer Front-End</span>
+                    </h2>
+                    <p>
+                        soy un derrollador apasionado por el front end Actualmente vivo en Barranquilla/Colombia, tengo 21 años. Tengo solidos conocimientos en HTML5 y CSS3, Javascript/jQuery, Angular e PHP, En mi tiempos libres , disfruto de la lectura y jugar al futbol.
+                    </p>
+                    <a href="./assets/docs/MiHojaDeVida.pdf" download="HojaDeVida-Sebas">Descargar CV</a
+            >
+          </div>
+        </div>
+      </div>
+      <!--max-width-->
+    </section>
+
+    <section data-anima class="habilidades" id="habilidades">
+      <div class="max-width">
+        <h2 class="title">Mis habilidades</h2>
+        <div class="habilidades-content">
+          <main class="card">
+            <div class="circle">
+              <div class="bar"></div>
+              <div class="box"><span>65%</span></div>
+            </div>
+            <p class="txt">HTML & CSS</p>
+          </main>
+
+          <main class="card js">
+            <div class="circle">
+              <div class="bar"></div>
+              <div class="box"><span>40%</span></div>
+            </div>
+            <p class="txt">JavaScript</p>
+          </main>
+
+          <main class="card jquery">
+            <div class="circle">
+              <div class="bar"></div>
+              <div class="box"><span>30%</span></div>
+            </div>
+            <p class="txt">JQuery</p>
+          </main>
+
+          <main class="card angular">
+            <div class="circle">
+              <div class="bar"></div>
+              <div class="box"><span>20%</span></div>
+            </div>
+            <p class="txt">Angular</p>
+          </main>
+          
+        </div>
+      </div>
+      <!--max-width-->
+    </section>
+
+    <section data-anima class="contato" id="contato">
+      <div class="max-width">
+        <h2 class="title">Contacto</h2>
+        <div class="contato-content">
+          <div class="column left">
+            <div class="text">Informacion</div>
+
+            <div class="icons">
+              <div class="row">
+                <i class="fas fa-user"></i>
+                <div class="info">
+                  <div class="head">Nombre</div>
+                  <div class="sub-title">Sebastian caballero</div>
+                </div>
+              </div>
+
+              <div class="row">
+                <i class="fas fa-map-marker-alt"></i>
+                <div class="info">
+                  <div class="head">Colombia</div>
+                  <div class="sub-title">Barranquilla</div>
+                </div>
+              </div>
+
+              <div class="row">
+                <i class="fas fa-envelope"></i>
+                <div class="info">
+                  <div class="head">Email</div>
+                  <div class="sub-title">sebastiancaballero2000@gmail.com</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="column right">
+            <div class="text">Entre en contacto!</div>
+
+            <form action="https://formsubmit.co/b53142221256d614d3422a5562d2f5ba" method="POST">
+              <div class="fields">
+                <div class="field name">
+                  <input type="text" name="Nombre" placeholder="Nombre" required />
+                </div>
+
+                <div class="field email">
+                  <input type="email" name="Email" placeholder="Email" required />
+                </div>
+              </div>
+
+              <div class="field">
+                <input type="text" name="Asunto" placeholder="Asunto" required />
+              </div>
+
+              <div class="field textarea">
+                <textarea
+                  cols="30"
+                  rows="10"
+                  name="Descripción"
+                  placeholder="Descripción"
+                  required
+                ></textarea>
+              </div>
+               <input type="hidden" name="_next" value="http://127.0.0.1:5500/">
+               <!-- <input type="hidden" name="_captcha" value="false"> -->
+              <div class="button">
+                <button type="submit">Enviar</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <!--max-width-->
+    </section>
+    <script type="module" src="assets/js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,177 @@
+/* contacto section styling */
+
+.contato {
+    font-family: "Poppins", sans-serif;
+    padding: 50px 0;
+}
+
+.contato .max-width {
+    margin: auto;
+    max-width: 1300px;
+    padding: 0 4%;
+    width: 100%;
+}
+
+.contato .title {
+    font-family: "Ubuntu", sans-serif;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    position: relative;
+    text-align: center;
+}
+
+.contato .title::before {
+    background-color: #111;
+    bottom: 0px;
+    content: "";
+    height: 3px;
+    left: 50%;
+    position: absolute;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    width: 180px;
+}
+
+.contato .title::after {
+    background-color: #fff;
+    bottom: -13px;
+    color: rgb(20, 157, 220);
+    content: "Contact me";
+    font-size: 20px;
+    left: 50%;
+    padding: 5px;
+    position: absolute;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+.contato-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding: 20px 0;
+    width: 100%;
+}
+
+.contato .contato-content .column {
+    width: calc(50% - 30px);
+}
+
+.contato .contato-content .text {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.contato .contato-content .left p {
+    text-align: justify;
+}
+
+.contato .contato-content .left .icons {
+    margin: 10px 0;
+}
+
+.contato .contato-content .row {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 65px;
+}
+
+.contato .contato-content .row .info {
+    margin-left: 30px;
+}
+
+.contato .contato-content .row i {
+    color: rgb(20, 157, 220);
+    font-size: 25px;
+}
+
+.contato .contato-content .info .head {
+    font-weight: 500;
+}
+
+.contato .contato-content .info .sub-title {
+    color: #333;
+}
+
+.contato .right form .fields {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.contato .right form .field input:focus {
+    border: 1px solid rgb(20, 157, 220);
+    transition: border .3s ease;
+}
+
+.contato .right form .field textarea:focus {
+    border: 1px solid rgb(20, 157, 220);
+    transition: border .3s ease;
+}
+
+.contato .right form .field,
+.contato .right form .fields .field {
+    height: 45px;
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.contato .right form .textarea {
+    height: 80px;
+}
+
+.contato .right form .name {
+    margin-right: 10px;
+}
+
+.contato .right form .email {
+    margin-left: 10px;
+}
+
+.contato .right form .field input,
+.contato .right form .textarea textarea {
+    border: 1px solid lightgrey;
+    border-radius: 6px;
+    font-size: 17px;
+    height: 100%;
+    padding: 0 6px;
+    width: 100%;
+}
+
+.contato .right form .textarea textarea {
+    padding-top: 10px;
+    resize: none;
+}
+
+.contato .right form .button {
+    height: 47px;
+    width: 170px;
+}
+
+.contato .right form .button button {
+    background: rgb(20, 157, 220);
+    border: 2px solid rgb(20, 157, 220);
+    border-radius: 6px;
+    color: white;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 500;
+    height: 100%;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+    width: 100%;
+}
+
+.contato .right form .button button:hover {
+    background: transparent;
+    color: rgb(20, 157, 220);
+}

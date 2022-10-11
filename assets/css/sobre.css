@@ -1,0 +1,112 @@
+/*-- sobre section styling --*/
+
+.sobre {
+    font-family: "Poppins", sans-serif;
+    padding: 50px 0;
+}
+
+.sobre .max-width {
+    margin: auto;
+    max-width: 1300px;
+    padding: 0 4%;
+    width: 100%;
+}
+
+.sobre .title {
+    font-family: "Ubuntu", sans-serif;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    position: relative;
+    text-align: center;
+}
+
+.sobre .title::before {
+    background-color: #111;
+    bottom: 0px;
+    content: "";
+    height: 3px;
+    left: 50%;
+    position: absolute;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    width: 180px;
+}
+
+.sobre .title::after {
+    background-color: #fff;
+    bottom: -13px;
+    color: rgb(20, 157, 220);
+    content: "About me";
+    font-size: 20px;
+    left: 50%;
+    padding: 5px;
+    position: absolute;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+.sobre-content {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background: transparent;
+}
+
+.sobre .sobre-content .left {
+    width: 45%;
+}
+
+.sobre .sobre-content .left img {
+    border-radius: 100%;
+    height: 400px;
+    -o-object-fit: cover;
+    object-fit: cover;
+    width: 400px;
+}
+
+.sobre .sobre-content .right {
+    width: 55%;
+}
+
+.sobre .sobre-content .right .text {
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.sobre .sobre-content .right .text span {
+    color: rgb(20, 157, 220);
+}
+
+.sobre .sobre-content .right p {
+    margin-bottom: 30px;
+    text-align: justify;
+}
+
+.sobre .sobre-content .right a {
+    background-color: rgb(20, 157, 220);
+    border: 2px solid rgb(20, 157, 220);
+    border-radius: 5px;
+    color: whitesmoke;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 10px 30px;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.sobre .sobre-content .right a:hover {
+    background-color: transparent;
+    color: rgb(20, 157, 220);
+}

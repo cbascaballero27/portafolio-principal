@@ -1,0 +1,129 @@
+/*-- habilidades section styling --*/
+
+.habilidades {
+    background: #111111;
+    font-family: "Poppins", sans-serif;
+    padding: 50px 0;
+}
+
+.habilidades .max-width {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    max-width: 1300px;
+    padding: 0 3%;
+}
+
+.habilidades .title {
+    color: white;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    position: relative;
+    text-align: center;
+}
+
+.habilidades .title::before {
+    background-color: white;
+    bottom: 0px;
+    content: "";
+    height: 3px;
+    left: 50%;
+    position: absolute;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    width: 180px;
+}
+
+.habilidades .title::after {
+    background-color: #111111;
+    bottom: -13px;
+    color: rgb(20, 157, 220);
+    content: "Skills";
+    font-size: 20px;
+    left: 50%;
+    padding: 5px;
+    position: absolute;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+.habilidades-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 20px 0;
+    width: 90%;
+}
+
+.habilidades-content .card {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background: #222222;
+    border-radius: 5px;
+    color: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    height: 300px;
+    -webkit-box-pack: space-evenly;
+    -ms-flex-pack: space-evenly;
+    justify-content: space-evenly;
+    width: 22%;
+}
+
+.habilidades-content .card .circle {
+    border-radius: 50%;
+    height: 150px;
+    position: relative;
+    width: 150px;
+}
+
+.habilidades-content .card .circle .box,
+.habilidades-content .card .circle .box span {
+    left: 50%;
+    position: absolute;
+    top: 50%;
+}
+
+.habilidades-content .card .circle .box {
+    border-radius: 50%;
+    height: 100%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+
+.habilidades-content .card .circle .box span {
+    color: white;
+    font-size: 38px;
+    font-weight: 600;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.habilidades-content .txt {
+    color: white;
+    font-size: 18px;
+}

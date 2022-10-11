@@ -1,0 +1,33 @@
+/*--imports---*/
+
+/*--font---*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap");
+
+/*--FontAS--*/
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css");
+
+/*--resets--*/
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  outline: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+/* js animations */
+[data-anima] {
+  opacity: 0;
+  transform: translate3d(-30px, 0, 0);
+  transition: all 0.3s ease;
+}
+
+[data-anima].active {
+  opacity: 1;
+  transform: translate3d(0px, 0, 0);
+}

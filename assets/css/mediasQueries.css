@@ -1,0 +1,145 @@
+/* Responsive media query styling */
+
+@media screen and (max-width: 992px) {
+  header .max-width {
+    padding: 0 2%;
+  }
+
+  .navbar ul {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background-color: #111;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    height: 100vh;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    left: -100%;
+    position: fixed;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    top: 0;
+    width: 100%;
+  }
+
+  .navbar ul.active {
+    left: 0;
+  }
+
+  .navbar ul li {
+    padding: 35px;
+    -webkit-transform: translate3d(-5px, 0, 0);
+    transform: translate3d(-5px, 0, 0);
+  }
+
+  .navbar ul li a {
+    font-size: 30px;
+  }
+
+  .menu-btn,
+  .menu-btn i {
+    display: block;
+    z-index: 999;
+  }
+
+  /*--home--*/
+
+  .inicio {
+    min-height: 650px;
+  }
+
+  .inicio .max-width {
+    margin: 230px 0 auto 2%;
+  }
+
+  .inicio .inicio-content .txt1 {
+    font-size: 25px;
+  }
+
+  .inicio .inicio-content .txt2 {
+    font-size: 58px;
+  }
+
+  .inicio .inicio-content .txt3 {
+    font-size: 37px;
+  }
+
+  /*-- sobre --*/
+
+  .sobre .sobre-content .column {
+    width: 50%;
+  }
+
+  .sobre .sobre-content .left img {
+    height: 320px;
+    width: 320px;
+  }
+}
+
+@media screen and (max-width: 862px) {
+  /*-- sobre --*/
+
+  .sobre .max-width {
+    max-width: 800px;
+  }
+
+  .sobre .sobre-content .column,
+  .contato .contato-content .column{
+    width: 100%;
+  }
+
+  .sobre .sobre-content .left {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin: 0 auto 60px;
+  }
+
+  .sobre .sobre-content .right {
+    -webkit-box-flex: 100%;
+    -ms-flex: 100%;
+    flex: 100%;
+  }
+
+  /*habilidades*/
+
+  .habilidades-content {
+    padding: 0px 50px;
+    width: 100%;
+  }
+
+  .habilidades-content .card {
+    border-radius: 5px;
+    color: white;
+    height: 290px;
+    margin-bottom: 50px;
+    width: 45%;
+  }
+}
+
+@media screen and (max-width: 507px) {
+  /*habilidades*/
+
+  .habilidades-content {
+    padding: 0px 50px;
+    width: 100%;
+  }
+
+  .habilidades-content .card {
+    border-radius: 5px;
+    color: white;
+    height: 290px;
+    margin-bottom: 50px;
+    width: 100%;
+  }
+}
